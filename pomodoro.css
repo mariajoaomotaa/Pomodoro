@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'ArialRounded';
+    font-display: swap;
+    src: url('/fonts/ArialRounded/Arial_Rounded_MT.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ArialRounded';
+    font-display: swap;
+    src: url('/fonts/ArialRounded/Arial-Rounded-MT-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+html {
+    background-color: rgb(186, 73, 73);
+}
+
+.main {
+    width: 500px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-color: #C15C5C;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    height: 330px;
+}
+
+.main .timer {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main button {
+    background-color: white;
+    color: rgb(186, 73, 73);
+    border-style: none;
+    width: 160px;
+    height: 65px;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.option {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.tab-links {
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.tab-links::after {
+    content: '';
+    background: white;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
